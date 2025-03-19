@@ -27,34 +27,6 @@ export default [
     link: 'https://github.com/http-tests/cache-tests/wiki/nginx'
   },
   {
-    file: 'squid.json',
-    name: 'Squid',
-    type: 'rev-proxy',
-    version: '6.10-1ubuntu1',
-    link: 'https://github.com/http-tests/cache-tests/wiki/Squid'
-  },
-  {
-    file: 'trafficserver.json',
-    name: 'ATS',
-    type: 'rev-proxy',
-    version: '9.2.5+ds-1',
-    link: 'https://github.com/http-tests/cache-tests/wiki/Traffic-Server'
-  },
-  {
-    file: 'apache.json',
-    name: 'httpd',
-    type: 'rev-proxy',
-    version: '2.4.62-3ubuntu1',
-    link: 'https://github.com/http-tests/cache-tests/wiki/Apache-httpd'
-  },
-  {
-    file: 'varnish.json',
-    name: 'Varnish',
-    type: 'rev-proxy',
-    version: '7.5.0-3',
-    link: 'https://github.com/http-tests/cache-tests/wiki/Varnish'
-  },
-  {
     file: 'caddy.json',
     name: 'caddy',
     type: 'rev-proxy',
@@ -74,5 +46,11 @@ export default [
     type: 'cdn',
     version: '2025-01-21',
     link: 'https://github.com/http-tests/cache-tests/wiki/Fastly'
+  },
+  {
+    file: 'deno.json',
+    name: 'ng',
+    version: '2025-03-19',
+    link: ''
   }
 ]
