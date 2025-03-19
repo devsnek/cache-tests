@@ -162,8 +162,13 @@ function checkResponse (test, requests, idx, response) {
         assert(respPresentSetup, condition,
           `Response ${reqNum} header ${header[0]} is ${value}, should ${msg}`)
       } else {
-        const expectedValue = fixupHeader(
+        let expectedValue = fixupHeader(
           header, Object.fromEntries(response.headers), reqConfig)[1]
+
+        if (header[0] === 'Vary') {
+          expectedValue = 'Accept-Encoding, ' + expectedValue;
+        }
+
         assert(respPresentSetup, response.headers.get(header[0]) === expectedValue,
           `Response ${reqNum} header ${header[0]} is "${response.headers.get(header[0])}", not "${expectedValue}"`)
       }
@@ -248,8 +253,12 @@ function checkServerRequests (requests, responses, serverState) {
             `Request ${reqNum} ${header} header not present.`)
         } else {
           const reqValue = serverRequest.request_headers[header[0].toLowerCase()]
-          assert(reqPresentSetup, reqValue === header[1],
-            `Request ${reqNum} header ${header[0]} is "${reqValue}", not "${header[1]}"`)
+          let expected = header[1];
+          if (header[0] === 'Vary') {
+            expected = 'Accept-Encoding, ' + expected;
+          }
+          assert(reqPresentSetup, reqValue === expected,
+            `Request ${reqNum} header ${header[0]} is "${reqValue}", not "${expected}"`)
         }
       })
     }
@@ -285,9 +294,13 @@ function checkServerRequests (requests, responses, serverState) {
         if (Array.isArray(header[1])) {
           header[1] = header[1].join(', ')
         }
+        let expected = header[1];
+        if (header[0] === 'Vary') {
+          expected = 'Accept-Encoding, ' + expected;
+        }
         assert(true, // default headers is always setup
-          received === header[1],
-          `Response ${reqNum} header ${header[0]} is "${received}", not "${header[1]}"`)
+          received === expected,
+          `Response ${reqNum} header ${header[0]} is "${received}", not "${expected}"`)
       })
     }
     if ('expected_method' in reqConfig) {

@@ -1,11 +1,11 @@
 {
   "304-etag-update-response-Cache-Control": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-Clear-Site-Data": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-Content-Encoding": [
     "Assertion",
@@ -13,19 +13,19 @@
   ],
   "304-etag-update-response-Content-Foo": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-Content-Length": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-Content-Location": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-Content-MD5": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-Content-Range": [
     "Assertion",
@@ -33,51 +33,51 @@
   ],
   "304-etag-update-response-Content-Security-Policy": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-Content-Type": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-ETag": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-Expires": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-Public-Key-Pins": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-Set-Cookie": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-Set-Cookie2": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-Test-Header": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-X-Content-Foo": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-X-Frame-Options": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-X-Test-Header": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-etag-update-response-X-XSS-Protection": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "304-lm-use-stored-Test-Header": true,
   "age-parse-dup-0": true,
@@ -110,7 +110,7 @@
   ],
   "cc-resp-must-revalidate-stale": [
     "Setup",
-    "Response 3 status is 500, not 200"
+    "Response 3 status is 599, not 200"
   ],
   "cc-resp-no-cache": true,
   "cc-resp-no-cache-case-insensitive": [
@@ -119,11 +119,11 @@
   ],
   "cc-resp-no-cache-revalidate": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "cc-resp-no-cache-revalidate-fresh": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "cc-resp-no-store": true,
   "cc-resp-no-store-case-insensitive": true,
@@ -141,7 +141,7 @@
   "ccreq-no-cache": true,
   "ccreq-no-cache-etag": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "ccreq-no-cache-lm": true,
   "ccreq-no-store": [
@@ -156,11 +156,11 @@
   "cdn-cc-invalid-sh-type-wrong": true,
   "cdn-date-update-exceed": [
     "Assertion",
-    "Response 2 header Date is \"Wed, 19 Mar 2025 13:22:10 +0000\", not \"Wed, 19 Mar 2025 13:22:10 GMT\""
+    "Response 2 header Date is \"Wed, 19 Mar 2025 14:17:31 +0000\", not \"Wed, 19 Mar 2025 14:17:31 GMT\""
   ],
   "cdn-expires-update-exceed": [
     "Assertion",
-    "Response 2 header Expires is \"null\", not \"Wed, 19 Mar 2025 13:22:15 GMT\""
+    "Response 2 header Expires is \"null\", not \"Wed, 19 Mar 2025 14:17:36 GMT\""
   ],
   "cdn-fresh-cc-nostore": [
     "Assertion",
@@ -243,11 +243,11 @@
   ],
   "conditional-etag-strong-generate": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "conditional-etag-strong-generate-unquoted": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "conditional-etag-strong-respond": [
     "Assertion",
@@ -279,7 +279,7 @@
   ],
   "conditional-etag-vary-headers": [
     "Setup",
-    "Response 2 status is 500, not 200"
+    "Response 2 status is 599, not 200"
   ],
   "conditional-etag-vary-headers-mismatch": [
     "Setup",
@@ -646,11 +646,11 @@
   "other-cookie": true,
   "other-date-update": [
     "Assertion",
-    "Response 2 header Date is \"Wed, 19 Mar 2025 13:20:25 +0000\", not \"Wed, 19 Mar 2025 13:20:22 GMT\""
+    "Response 2 header Date is \"Wed, 19 Mar 2025 14:15:47 +0000\", not \"Wed, 19 Mar 2025 14:15:44 GMT\""
   ],
   "other-date-update-expires": [
     "Assertion",
-    "Response 2 header Date is \"Wed, 19 Mar 2025 13:20:29 +0000\", not \"Wed, 19 Mar 2025 13:20:26 GMT\""
+    "Response 2 header Date is \"Wed, 19 Mar 2025 14:15:51 +0000\", not \"Wed, 19 Mar 2025 14:15:48 GMT\""
   ],
   "other-date-update-expires-update": true,
   "other-fresh-content-disposition-attachment": true,
@@ -835,26 +835,14 @@
   "vary-3-no-match": true,
   "vary-3-omit": true,
   "vary-3-order": true,
-  "vary-cache-key": [
-    "Setup",
-    "Response 1 header Vary is \"Accept-Encoding, Foo\", not \"Foo\""
-  ],
+  "vary-cache-key": true,
   "vary-invalidate": [
     "Assertion",
     "Response 3 does not come from cache"
   ],
-  "vary-match": [
-    "Setup",
-    "Response 1 header Vary is \"Accept-Encoding, Foo\", not \"Foo\""
-  ],
-  "vary-no-match": [
-    "Setup",
-    "Response 1 header Vary is \"Accept-Encoding, Foo\", not \"Foo\""
-  ],
-  "vary-normalise-combine": [
-    "Setup",
-    "Response 1 header Vary is \"Accept-Encoding, Foo\", not \"Foo\""
-  ],
+  "vary-match": true,
+  "vary-no-match": true,
+  "vary-normalise-combine": true,
   "vary-normalise-lang-case": [
     "Assertion",
     "Response 2 does not come from cache"
@@ -875,18 +863,9 @@
     "Assertion",
     "Response 2 does not come from cache"
   ],
-  "vary-omit": [
-    "Setup",
-    "Response 1 header Vary is \"Accept-Encoding, Foo\", not \"Foo\""
-  ],
-  "vary-omit-stored": [
-    "Setup",
-    "Response 1 header Vary is \"Accept-Encoding, Foo\", not \"Foo\""
-  ],
-  "vary-star": [
-    "Setup",
-    "Response 1 header Vary is \"Accept-Encoding, *\", not \"*\""
-  ],
+  "vary-omit": true,
+  "vary-omit-stored": true,
+  "vary-star": true,
   "vary-syntax-empty-star": true,
   "vary-syntax-empty-star-lines": true,
   "vary-syntax-foo-star": true,
