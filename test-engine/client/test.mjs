@@ -62,7 +62,7 @@ export async function makeTest (test) {
   }
 
   function handleError (err) {
-    console.error(`ERROR: ${uuid} ${err.name} ${err.message}`)
+    console.error(`ERROR: ${test.id} ${uuid} ${err.name} ${err.message}`)
   }
 
   return clientUtils.putTestConfig(uuid, requests)

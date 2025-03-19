@@ -28,6 +28,11 @@ export function getResults () {
 }
 
 async function runSome (tests, chunkSize) {
+  for (const test of tests) {
+    console.log(test.id);
+    await makeTest(test);
+  }
+  /*
   let index = 0
   function next () {
     if (index < tests.length) {
@@ -37,4 +42,5 @@ async function runSome (tests, chunkSize) {
     }
   }
   return next()
+  */
 }
