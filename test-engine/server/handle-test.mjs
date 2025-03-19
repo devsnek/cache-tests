@@ -55,7 +55,7 @@ function continueHandleTest (uuid, request, response, requests, serverState) {
       httpStatus = [304, 'Not Modified']
     }
     if (httpStatus[0] !== 304) {
-      httpStatus = [999, '304 Not Generated']
+      httpStatus = [599, '304 Not Generated']
     }
   }
   response.statusCode = httpStatus[0]
