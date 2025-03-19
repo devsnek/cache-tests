@@ -1,9 +1,9 @@
 /* global URL */
 
-import fs from 'fs'
-import http from 'http'
-import https from 'https'
-import process from 'process'
+import fs from 'node:fs'
+import http from 'node:http'
+import https from 'node:https'
+import process from 'node:process'
 
 import handleConfig from './handle-config.mjs'
 import handleFile from './handle-file.mjs'
@@ -28,7 +28,7 @@ function handleMain (request, response) {
 
 const protocol = process.env.npm_config_protocol || process.env.npm_package_config_protocol
 const port = process.env.npm_config_port || process.env.npm_package_config_port
-const baseUrl = `${protocol}://localhost:${port}/`
+const baseUrl = `${protocol}://devsnek-cache-tests.dev.deno.co/`
 const pidfile = process.env.npm_config_pidfile || process.env.npm_package_config_pidfile
 
 fs.writeFile(pidfile, process.pid.toString(), 'ascii', function (err) {
@@ -51,4 +51,4 @@ server.on('listening', () => {
     : server.address().address
   console.log(`Listening on ${protocol.toLowerCase()}://${host}:${server.address().port}/`)
 })
-server.listen(port)
+server.listen('./isolate/http.sock')
